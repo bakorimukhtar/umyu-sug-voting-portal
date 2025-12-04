@@ -1,0 +1,142 @@
+/* ==============================
+   UMYU BRAND COLORS
+   ============================== */
+   :root {
+    --umyu-green: #00823F;
+    --umyu-dark-green: #006B33;
+    --umyu-yellow: #F4D03F;
+    --black: #000000;
+    --white: #FFFFFF;
+    --light-gray: #f4f4f4;
+    --card-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* ==============================
+   GLOBAL RESET
+   ============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: var(--umyu-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ==============================
+   LOGIN WRAPPER
+   ============================== */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-card {
+    background: var(--white);
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px var(--card-shadow);
+    text-align: center;
+}
+
+/* ==============================
+   LOGO & TITLES
+   ============================== */
+.logo {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.portal-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--umyu-dark-green);
+}
+
+.portal-subtitle {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ==============================
+   FORM STYLES
+   ============================== */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--umyu-dark-green);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid var(--umyu-green);
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--umyu-dark-green);
+}
+
+/* ==============================
+   BUTTON
+   ============================== */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--umyu-dark-green);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    background: var(--umyu-green);
+}
+
+/* ==============================
+   FOOTER NOTE
+   ============================== */
+.footer-note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #444;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+@media (max-width: 480px) {
+    .portal-title {
+        font-size: 19px;
+    }
+    .login-card {
+        padding: 25px;
+    }
+}
