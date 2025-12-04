@@ -35,7 +35,7 @@ async function handleLogin(event) {
     const emailPattern = /^[a-z0-9._-]+@students\.umyu\.edu\.ng$/i;
 
     if (!emailPattern.test(email)) {
-        alert("Please enter a valid UMYU student email.\nExample: csc220875@students.umyu.edu.ng");
+        alert("Please enter a valid UMYU student email.\nExample: mbbs220000@students.umyu.edu.ng");
         return;
     }
 
