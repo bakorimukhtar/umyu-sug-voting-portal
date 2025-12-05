@@ -158,7 +158,7 @@ async function setupVotingPage() {
 
                 html += `
                 <div class="candidate-card">
-                    <div class="card-header">User</div> <div class="card-body">
+                    <div class="card-header">Candidate</div> <div class="card-body">
                         <div class="candidate-name">${cand.name}</div>
                         <div class="reg-no">${cand.reg_no}</div>
                         <br><br>
