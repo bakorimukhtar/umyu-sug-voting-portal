@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMYU E-Voting Portal | Cast Vote</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="voting-nav">
+        <div class="nav-brand">
+            <img src="assets/download.jpeg" alt="Logo" onerror="this.src='https://placehold.co/50x50'">
+            <span>UMYU E-Voting</span>
+        </div>
+        <div>
+            <span id="user-display" style="margin-right: 15px; font-size: 0.9rem;"></span>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="voting-container">
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: var(--umyu-dark-green);">Student Union Election 2025</h1>
+            <p>Please cast your vote for each position below.</p>
+        </div>
+
+        <div id="ballot-box">
+            <p style="text-align:center; padding: 20px;">Loading election data...</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
